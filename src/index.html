@@ -8,6 +8,18 @@
 </head>
 <body>
     <h1>Registrate aquí</h1>
-</body>
+    <form id="logInForm" action="/users" method="POST" enctype="multipart/form-data">
+        <label for="username">Name:</label><br>
+        <input class="userInfo" type="text" id="username" name="username"><br>
+        <label for="email">Email:</label><br>
+        <input class="userInfo" type="text" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input class="userInfo" type="password" id="password" name="password"><br>
+        <br>
+        <input id="fileBtn" type="file" name="profilePic"><br>
+        <br>
+        <button id="send">Darse de alta</button>
+      </form>
+    </body>
 <script src="main.js"></script>
 </html>
